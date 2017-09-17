@@ -14,22 +14,27 @@ void output(int *p, int length) {
     }
 }
 
-void bubbleSort(int *p, int length) {
+void selectSort(int *p, int length) {
+    int tmp;
     for (int i = 0; i < length; i++) {
-        for (int j = 0; j < length - i - 1; j++) {
-            if (p[j] > p[j + 1]) {
-                swap(p[j], p[j + 1]);
+        tmp = i;
+        for (int j = i + 1; j < length; j++) {
+            if (p[tmp] > p[j]) {
+                tmp = j;
             }
+        }
+        if (i != tmp) {
+            swap(p[i], p[tmp]);
         }
     }
 }
 
 int main(int argc, char *args[]) {
     int buf[10] = {12, 4, 34, 6, 8, 65, 3, 2, 988, 45};
-    cout << "ÅÅÐòÇ°:" << endl;
+    cout << "BeforeSort:" << endl;
     output(buf, sizeof(buf) / sizeof(int));
-    bubbleSort(buf, sizeof(buf) / sizeof(int));
+    selectSort(buf, sizeof(buf) / sizeof(int));
     cout << endl;
-    cout << "ÅÅÐòºó:" << endl;
+    cout << "AfterSort:" << endl;
     output(buf, sizeof(buf) / sizeof(int));
 }
