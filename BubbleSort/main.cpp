@@ -32,4 +32,5 @@ int main(int argc, char *args[]) {
     cout << endl;
     cout << "ÅÅĞòºó:" << endl;
     output(buf, sizeof(buf) / sizeof(int));
+    return 0;
 }
