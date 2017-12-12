@@ -1,2 +1,2 @@
-BubbleSort
-ц╟ещеепР
+О╩©BubbleSort
+Е├▓ФЁ║Ф▌▓Е╨▐

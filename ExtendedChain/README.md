@@ -1,2 +1,2 @@
-ExtendedChain
-线性表链表描述（使用迭代器
+锘縀xtendedChain
+绾挎�ц〃閾捐〃鎻忚堪锛堜娇鐢ㄨ凯浠ｅ櫒
